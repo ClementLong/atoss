@@ -1,0 +1,6 @@
+// Font Size //
+@each $key, $space in $font-size {
+  @include mq(tz-#{$key}) {
+    font-size: #{$space};
+  }
+}

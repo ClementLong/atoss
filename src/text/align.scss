@@ -1,0 +1,12 @@
+// Text align //
+@include mq(ta-c) {
+  text-align: center;
+}
+
+@include mq(ta-l) {
+  text-align: left;
+}
+
+@include mq(ta-r) {
+  text-align: right;
+}

@@ -1,0 +1,84 @@
+// Justify Content //
+@include mq(fjc-c) {
+  justify-content: center;
+}
+
+@include mq(fjc-s) {
+  justify-content: flex-start;
+}
+
+@include mq(fjc-e) {
+  justify-content: flex-end;
+}
+
+@include mq(fjc-b) {
+  justify-content: space-between;
+}
+
+@include mq(fjc-a) {
+  justify-content: space-around;
+}
+
+// Align Items //
+@include mq(fai-c) {
+  align-items: center;
+}
+
+@include mq(fai-e) {
+  align-items: flex-end;
+}
+
+@include mq(fai-s) {
+  align-items: flex-start;
+}
+
+@include mq(fai-h) {
+  align-items: stretch;
+}
+
+// Align Content //
+@include mq(fjc-c) {
+  align-content: center;
+}
+
+@include mq(fjc-s) {
+  align-content: flex-start;
+}
+
+@include mq(fjc-e) {
+  align-content: flex-end;
+}
+
+@include mq(fjc-b) {
+  align-content: space-between;
+}
+
+@include mq(fjc-a) {
+  align-content: space-around;
+}
+
+// Flex wrap //
+@include mq(fw-w) {
+  flex-wrap: wrap;
+}
+
+@include mq(fw-nw) {
+  flex-wrap: nowrap;
+}
+
+// Flex Direction //
+@include mq(fd-c) {
+  flex-direction: column;
+}
+
+@include mq(fd-cr) {
+  flex-direction: column-reverse;
+}
+
+@include mq(fd-r) {
+  flex-direction: row;
+}
+
+@include mq(fd-rr) {
+  flex-direction: row-reverse;
+}

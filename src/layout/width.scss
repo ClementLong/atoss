@@ -1,0 +1,6 @@
+// Width //
+@each $key, $space in $spacing {
+  @include mq(w-#{$key}) {
+    width: #{$space};
+  }
+}

@@ -1,0 +1,12 @@
+// Font Family //
+
+$test: '';
+
+@each $font in $font-face {
+  @if $test != map-get($font, slug) {
+    $test: map-get($font, slug);
+    @include mq(ff-#{map-get($font, slug)}) {
+      font-family: map-get($font, name), helvetica, arial, sans-serif;
+    }
+  } 
+}

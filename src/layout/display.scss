@@ -1,0 +1,15 @@
+@include mq(f) {
+  display: flex;
+}
+
+@include mq(d-b) {
+  display: block;
+}
+
+@include mq(d-i) {
+  display: block;
+}
+
+@include mq(d-if) {
+  display: inline-flex;
+}

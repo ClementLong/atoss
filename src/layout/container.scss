@@ -1,0 +1,13 @@
+.container {
+  margin: auto;
+  width: 90%;
+
+  @include l {
+    width: 85%;
+  }
+
+  @include x {
+    width: map-get($breakpoints, x);
+    padding: 0 15px;
+  }
+}

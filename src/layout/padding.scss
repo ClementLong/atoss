@@ -1,0 +1,50 @@
+// Padding //
+@each $key, $space in $spacing {
+  @include mq(p-#{$key}) {
+    padding: #{$space};
+  }
+}
+
+// Padding Top //
+@each $key, $space in $spacing {
+  @include mq(pt-#{$key}) {
+    padding-top: #{$space};
+  }
+}
+
+// Padding Bottom //
+@each $key, $space in $spacing {
+  @include mq(pb-#{$key}) {
+    padding-bottom: #{$space};
+  }
+}
+
+// Padding Left //
+@each $key, $space in $spacing {
+  @include mq(pl-#{$key}) {
+    padding-left: #{$space};
+  }
+}
+
+// Padding Right //
+@each $key, $space in $spacing {
+  @include mq(pr-#{$key}) {
+    padding-right: #{$space};
+  }
+}
+
+// Padding Vertical //
+@each $key, $space in $spacing {
+  @include mq(pv-#{$key}) {
+    padding-top: #{$space};
+    padding-bottom: #{$space};
+  }
+}
+
+// Padding Horizontal //
+@each $key, $space in $spacing {
+  @include mq(ph-#{$key}) {
+    padding-left: #{$space};
+    padding-right: #{$space};
+  }
+}

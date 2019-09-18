@@ -1,0 +1,5 @@
+@each $color in $colors {
+  @include mq(bg-#{map-get($color, name)}) {
+    background-color: map-get($color, hexa);
+  }
+}

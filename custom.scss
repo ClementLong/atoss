@@ -1,0 +1,15 @@
+.c {
+
+  &_title {
+    @extend .tz-8;
+    @extend .th-5;
+    @extend .tw-8;
+  }
+
+  &_subtitle {
+    @extend .tz-6;
+    @extend .th-4;
+    @extend .ta-c;
+  }
+
+}

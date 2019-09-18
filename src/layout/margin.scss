@@ -1,0 +1,50 @@
+// Margin //
+@each $key, $space in $spacing {
+  @include mq(m-#{$key}) {
+    margin: #{$space};
+  }
+}
+
+// Margin Top //
+@each $key, $space in $spacing {
+  @include mq(mt-#{$key}) {
+    margin-top: #{$space};
+  }
+}
+
+// Margin Bottom //
+@each $key, $space in $spacing {
+  @include mq(mb-#{$key}) {
+    margin-bottom: #{$space};
+  }
+}
+
+// Margin Left //
+@each $key, $space in $spacing {
+  @include mq(ml-#{$key}) {
+    margin-left: #{$space};
+  }
+}
+
+// Margin Right //
+@each $key, $space in $spacing {
+  @include mq(mr-#{$key}) {
+    margin-right: #{$space};
+  }
+}
+
+// Margin Vertical //
+@each $key, $space in $spacing {
+  @include mq(mv-#{$key}) {
+    margin-top: #{$space};
+    margin-bottom: #{$space};
+  }
+}
+
+// Margin Horizontal //
+@each $key, $space in $spacing {
+  @include mq(mh-#{$key}) {
+    margin-left: #{$space};
+    margin-right: #{$space};
+  }
+}

@@ -1,0 +1,23 @@
+@include mq(zi-init) {
+  z-index: 1;
+}
+
+@include mq(zi-1) {
+  z-index: 1000;
+}
+
+@include mq(zi-2) {
+  z-index: 1020;
+}
+
+@include mq(zi-3) {
+  z-index: 1030;
+}
+
+@include mq(zi-4) {
+  z-index: 1040;
+}
+
+@include mq(zi-5) {
+  z-index: 1050;
+}

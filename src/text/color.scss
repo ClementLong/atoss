@@ -1,0 +1,5 @@
+@each $color in $colors {
+  @include mq(c-#{map-get($color, name)}) {
+    color: map-get($color, hexa);
+  }
+}

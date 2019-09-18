@@ -1,0 +1,6 @@
+// Line Height //
+@each $key, $space in $spacing {
+  @include mq(th-#{$key}) {
+    line-height: #{$space};
+  }
+}

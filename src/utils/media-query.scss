@@ -1,0 +1,53 @@
+@mixin s {
+  @media (min-width: #{map-get($breakpoints, s)}) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media (min-width: #{map-get($breakpoints, m)}) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media (min-width: #{map-get($breakpoints, l)}) {
+    @content;
+  }
+}
+
+@mixin x {
+  @media (min-width: #{map-get($breakpoints, x)}) {
+    @content;
+  }
+}
+
+@mixin mq($classname) {
+  .#{$classname} {
+    @content;
+  }
+
+  @include s {
+    .s\:#{$classname} {
+      @content;
+    }
+  }
+
+  @include m {
+    .m\:#{$classname} {
+      @content;
+    }
+  }
+
+  @include l {
+    .l\:#{$classname} {
+      @content;
+    }
+  }
+
+  @include x {
+    .x\:#{$classname} {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// Text decoration //
+@include mq(td-none) {
+  text-decoration: none;
+}
+
+@include mq(td-under) {
+  text-decoration: underline;
+}

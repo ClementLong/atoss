@@ -1,0 +1,6 @@
+@each $color in $colors {
+  @include mq(bo-#{map-get($color, name)}) {
+    border: 1px solid map-get($color, hexa);
+  }
+}
+

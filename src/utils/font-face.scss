@@ -1,0 +1,8 @@
+@each $item in $font-face {
+  @font-face {
+    font-family: map-get($item, name);
+    src: map-get($item, path);
+    font-weight: map-get($item, weight);
+    font-style: map-get($item, style);
+  }
+}
